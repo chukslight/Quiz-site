@@ -1,0 +1,48 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a001f;
+  background-image: url('Arcium.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 0, 30, 0.75);
+  z-index: -1;
+}
+
+.quiz-box {
+  background-color: rgba(64, 0, 128, 0.85);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#answer-buttons button {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+#timer {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#review-list {
+  padding-left: 15px;
+}
+
+#review-list li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
