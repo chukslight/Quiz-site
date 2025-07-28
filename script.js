@@ -12,15 +12,56 @@ const reviewList = document.getElementById("review-list");
 const timerDisplay = document.getElementById("timer");
 
 let questions = [
-  { question: "When is the next Arcium community submit?", answers: ["28 July 2025", "29 July 2025", "30 July 2025", "31 July 2025"], correct: 2 },
-  { question: "What is Arcium primarily focused on?", answers: ["Gaming and NFTs", "Smart contract scalability", "Privacy-preserving computation", "Token distribution"], correct: 2 },
-  { question: "Which of the following is a key benefit of using Arcium?", answers: ["Lower staking requirements", "NFT minting automation", "Data privacy and verifiable off-chain logic", "Gasless transaction"], correct: 2 },
-  { question: "In Arcium, what do users reveal when verifying results?", answers: ["The entire computation history", "The source code of the logic", "Only the proof that a valid computation occurred", "Their private keys"], correct: 2 },
-  { question: "Arcium is best described as a:", answers: ["Blockchain explorer", "Privacy-preserving compute layer", "Consensus mechanism", "Token bridge"], correct: 1 },
-  { question: "What is the main security guarantee Arcium provides?", answers: ["File redundancy", "Spam resistance", "Trustless execution integrity", "KYC compliance"], correct: 2 },
-  { question: "How can developers integrate Arcium into their apps?", answers: ["By plugging in its privacy compute APIs", "By migrating fully to its blockchain", "Through centralized SDKs only", "By replacing Ethereum with Arcium"], correct: 0 },
-  { question: "Who is Arcium Head of Community?", answers: ["Doingz", "Loosty", "Aberama", "Lily Billy"], correct: 1 },
-  { question: "Arcium is coming to Kaito Soon", answers: ["True", "False"], correct: 1 }
+  {
+    question: "What is Arcium primarily focused on?",
+    answers: ["Gaming and NFTs", "Smart contract scalability", "Privacy-preserving computation", "Token distribution"],
+    correct: 2
+  },
+  {
+    question: "What PET does Arcium use exclusively for confidential computing?",
+    answers: ["TEES", "MPC", "ZKP", "AXOs"],
+    correct: 1
+  },
+  {
+    question: "What symbol is associated with the Arcium brand?",
+    answers: ["Letter A", "Solana", "Umbra", "Umbrella"],
+    correct: 3
+  },
+  {
+    question: "What is a well-known Privacy 1.0 coin that hides transactions?",
+    answers: ["Manticore", "Zero Knowledge Proofs", "Cerberus", "Monero"],
+    correct: 3
+  },
+  {
+    question: "What is the name of the backend integrated via Arcium's Inpher acquisition that supports <encrypted> AI?",
+    answers: ["TEEs", "Manticore", "ZKPs", "Cerberus"],
+    correct: 1
+  },
+  {
+    question: "What will the native token of Arcium be called?",
+    answers: ["Arxos", "Arc", "Arx", "Axium"],
+    correct: 2
+  },
+  {
+    question: "What is Arcium's most recent achievement on Solana?",
+    answers: ["Number one Project in Solana", "Leading solana", "Confidential SPL Token", "Bringing Latinas to Solana"],
+    correct: 2
+  },
+  {
+    question: "What does Confidential SPL offer on Solana?",
+    answers: ["Dominance", "Price Increase", "Privacy", "Aura"],
+    correct: 2
+  },
+  {
+    question: "What privacy protocol is built on Arcium to enable encrypted transactions on Solana?",
+    answers: ["Umbra", "Arcane hand", "Dark pool", "Cerberus"],
+    correct: 0
+  },
+  {
+    question: "What does Umbra mean in English?",
+    answers: ["Shadow", "Latina", "<encrypted>", "Umbrella"],
+    correct: 3
+  }
 ];
 
 let currentQuestionIndex = 0;
